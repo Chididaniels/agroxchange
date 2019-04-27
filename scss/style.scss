@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,900,700);
+
+html {
+  font-size: 16px;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+p {
+  font-size: 1.25rem;
+  width: 70%;
+  margin: 35px auto;
+}
+
+a {
+  color: #ddd;
+  &:hover {
+    color: #ccc;
+    text-decoration:none;
+  }
+}
+
+span {
+  color: blue;
+  font-weight: bold;
+}
+
+.carousel-inner { margin: auto; width: 90%; }
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,
+.carousel-control.right {
+  background-image:none;
+}
+ 
+.glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+  margin-top:-10px;
+  margin-left: -10px;
+  color: #444;
+}
+
+.carousel-inner {
+  a {
+    display:table-cell;
+    height: 180px;
+    width: 200px;
+    vertical-align: middle;
+  }
+  img {
+    max-height: 150px;
+    margin: auto auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+	.carousel-inner .active.left { left: -100%; }
+	.carousel-inner .next        { left:  100%; }
+	.carousel-inner .prev		 { left: -100%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+	.carousel-inner .active.left { left: -50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		 { left: -50%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+	.active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+	.carousel-inner .active.left { left: -16.7%; }
+  .carousel-inner .active.right { left: 16.7%;              }
+	.carousel-inner .next        { left:  16.7%; }
+	.carousel-inner .prev		 { left: -16.7%; }	
+  
+.carousel-inner { margin: auto; width: 1000px; }
+  
+}

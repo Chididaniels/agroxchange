@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,900,700);
+/*html {
+  font-size: 16px;
+}*/
+
+#sec3 h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 55px 0 35px;
+}
+
+ #sec3 a {
+  color: #ddd;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+#sec3 a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+#sec3 .carousel-inner {
+  margin: auto;
+  width: 90%;
+}
+
+#sec3 .carousel-control {
+  width: 4%;
+}
+
+#sec3 .carousel-control.left,
+#sec3 .carousel-control.right {
+  background-image: none;
+}
+
+ #sec3 .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+  margin-top: -10px;
+  margin-left: -10px;
+  color: #444;
+}
+
+#sec3 .carousel-inner a {
+  display: table-cell;
+  height: 180px;
+  width: 200px;
+  vertical-align: middle;
+}
+#sec3 .carousel-inner img {
+  max-height: 150px;
+  margin: auto auto;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+   #sec3 .carousel-inner > .item.next,
+  #sec3 .carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+   #sec3 .carousel-inner > .item.prev,
+  #sec3 .carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  #sec3 .carousel-inner > .item.next,
+  #sec3 .carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+  }
+
+  #sec3 .carousel-inner > .item.prev,
+  #sec3 .carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@media (min-width: 992px) {
+  #sec3 .carousel-inner > .item.next,
+  #sec3 .carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(16.7%, 0, 0);
+    transform: translate3d(16.7%, 0, 0);
+  }
+
+  #sec3 .carousel-inner > .item.prev,
+  #sec3 .carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-16.7%, 0, 0);
+    transform: translate3d(-16.7%, 0, 0);
+  }
+}
